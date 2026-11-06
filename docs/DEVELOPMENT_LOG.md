@@ -49,3 +49,11 @@ This document records significant milestones in the development of the CrizDan p
 - Light/dark theme switcher
 - Final responsiveness and accessibility review
 - Deployment
+
+### Skills Section
+- Created a responsive Skills section with six categories.
+- Implemented data-driven rendering using React map().
+- Added experience descriptions for individual skills.
+- Applied responsive CSS Grid layouts.
+- Maintained consistency with the global design system.
+- Tested desktop and mobile layouts.

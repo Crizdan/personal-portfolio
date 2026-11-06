@@ -41,7 +41,7 @@ My background in healthcare influences my approach to technology, particularly m
 Clone the repository:
 
 ```bash
-git clone https://github.com/Cridan/personal-portfolio
+git clone https://github.com/Crizdan/personal-portfolio
 ```
 
 Navigate into the project:
@@ -90,4 +90,4 @@ Planned sections include:
 
 **Oluebube Daniel Hillary (CrizDan)**
 
-GitHub: https://github.com/Cridan/personal-portfolio
+GitHub: https://github.com/Crizdan/personal-portfolio
