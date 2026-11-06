@@ -1,0 +1,129 @@
+
+/* =========================================
+   1. DESIGN TOKENS
+========================================= */
+
+:root {
+  font-family: 'Inter', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Brand colours */
+  --accent-color: #3b82f6;
+  --accent-hover: #2563eb;
+
+  /* Dark theme */
+  --background: #0b1120;
+  --surface: #111a2e;
+  --header-bg: rgba(11, 17, 32, 0.85);
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --border-color: rgba(148, 163, 184, 0.15);
+
+  /* Layout */
+  --container-width: 1120px;
+  --page-padding: 24px;
+
+  /* Shape */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  /* Motion */
+  --transition: 200ms ease;
+}
+
+/* =========================================
+   2. LIGHT THEME
+========================================= */
+
+[data-theme='light'] {
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --header-bg: rgba(248, 250, 252, 0.88);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --border-color: rgba(15, 23, 42, 0.12);
+}
+
+/* =========================================
+   3. RESET AND GLOBAL DEFAULTS
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--background);
+  color: var(--text-primary);
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+/* =========================================
+   4. REUSABLE LAYOUT
+========================================= */
+
+.container {
+  width: min(
+    100% - (var(--page-padding) * 2),
+    var(--container-width)
+  );
+  margin-inline: auto;
+}
+
+/* =========================================
+   5. ACCESSIBILITY
+========================================= */
+
+:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* =========================================
+   6. RESPONSIVE DEFAULTS
+========================================= */
+
+@media (max-width: 600px) {
+  :root {
+    --page-padding: 18px;
+  }
+}

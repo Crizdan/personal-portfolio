@@ -1,0 +1,290 @@
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+  min-height: calc(100vh - 76px);
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: center;
+  gap: 64px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* CONTENT */
+
+.hero-content {
+  max-width: 680px;
+}
+
+.hero-eyebrow {
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.hero-name {
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+  letter-spacing: -3px;
+  margin: 0;
+}
+
+.hero-name span {
+  color: var(--accent-color);
+}
+
+.hero-full-name {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 12px 0 28px;
+}
+
+.hero-headline {
+  font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+  line-height: 1.25;
+  letter-spacing: -1px;
+  margin: 0 0 20px;
+}
+
+.hero-description {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 620px;
+  margin-bottom: 26px;
+}
+
+/* INTEREST TAGS */
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.hero-tags span {
+  padding: 8px 13px;
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* AVAILABILITY */
+
+.hero-availability {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.hero-availability p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.availability-dot {
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+/* BUTTONS */
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition:
+    background-color var(--transition),
+    border-color var(--transition),
+    transform var(--transition);
+}
+
+.primary-button {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+.primary-button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.secondary-button {
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.secondary-button:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.hero-button:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 4px;
+}
+
+/* PHOTOGRAPH */
+
+.hero-visual {
+  width: 100%;
+  max-width: 350px;
+  justify-self: end;
+}
+
+.hero-image-frame {
+  position: relative;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: calc(var(--radius-lg) - 6px);
+}
+
+.hero-image-caption {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 14px;
+}
+
+/* TABLET AND MOBILE */
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr 0.65fr;
+    gap: 35px;
+  }
+
+  .hero-visual {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-top: 55px;
+    padding-bottom: 65px;
+  }
+
+  .hero-content {
+    order: 2;
+  }
+
+  .hero-visual {
+    order: 1;
+    justify-self: start;
+    max-width: 230px;
+  }
+
+  .hero-name {
+    letter-spacing: -2px;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-button {
+    width: 100%;
+  }
+
+  .hero-visual {
+    max-width: 200px;
+  }
+}
+
+/* TYPEWRITER EFFECT */
+
+.hero-role {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 5px;
+  min-height: 2.2em;
+  margin: 0 0 18px;
+  color: var(--text-primary);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.typed-role {
+  color: var(--accent-color);
+}
+
+.typing-cursor {
+  color: var(--accent-color);
+  animation: cursor-blink 0.8s steps(2, start) infinite;
+}
+
+@keyframes cursor-blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  .typing-cursor {
+    animation: none;
+  }
+}
