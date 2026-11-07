@@ -57,3 +57,11 @@ This document records significant milestones in the development of the CrizDan p
 - Applied responsive CSS Grid layouts.
 - Maintained consistency with the global design system.
 - Tested desktop and mobile layouts.
+
+### Projects Section
+- Added a responsive Featured Projects section.
+- Presented Radiography Student Toolkit and OfflineNaira.
+- Documented project problems, contributions and key features.
+- Added technology tags and project status information.
+- Distinguished individual work from collaborative development.
+- Tested desktop and mobile layouts.
