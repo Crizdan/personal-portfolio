@@ -1,0 +1,94 @@
+
+.languages-section {
+  padding: 100px 0;
+  background: var(--bg-primary);
+}
+
+.languages-heading {
+  max-width: 680px;
+  margin-bottom: 40px;
+}
+
+.languages-heading h2 {
+  margin-bottom: 16px;
+  color: var(--text-primary);
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  line-height: 1.2;
+}
+
+.languages-heading p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.language-card {
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  transition:
+    transform var(--transition),
+    border-color var(--transition);
+}
+
+.language-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-color);
+}
+
+.language-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.language-card-top h3 {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+}
+
+.language-level {
+  padding: 6px 10px;
+  color: var(--accent-color);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.language-proficiency {
+  margin-bottom: 8px;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.language-description {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .languages-section {
+    padding: 75px 0;
+  }
+
+  .languages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .language-card {
+    padding: 24px;
+  }
+}

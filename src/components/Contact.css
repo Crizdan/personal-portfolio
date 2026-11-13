@@ -1,0 +1,199 @@
+
+.contact-section {
+  padding: 110px 0;
+  background: var(--surface);
+}
+
+.contact-content {
+  max-width: 720px;
+  margin: 0 auto 56px;
+  text-align: center;
+}
+
+.contact-content h2 {
+  margin: 16px 0;
+  color: var(--text-primary);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+}
+
+.contact-intro {
+  max-width: 620px;
+  margin: 0 auto 28px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Email call-to-action */
+
+.contact-email-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 24px;
+  color: #fff;
+  background: var(--accent-color);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background-color var(--transition),
+    transform var(--transition);
+}
+
+.contact-email-button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.contact-email-button > svg {
+  width: 19px;
+  height: 19px;
+}
+
+.contact-button-arrow {
+  font-size: 1.1rem;
+}
+
+.contact-email {
+  margin-top: 14px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+/* Social contact cards */
+
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.contact-link-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    background-color var(--transition);
+}
+
+.contact-link-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-color);
+}
+
+.contact-link-card:focus-visible,
+.contact-email-button:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 4px;
+}
+
+/* Icon and text alignment */
+
+.contact-link-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text-primary);
+  font-size: 1.5rem;
+}
+
+.contact-icon svg {
+  width: 23px;
+  height: 23px;
+}
+
+/* Individual platform colours */
+
+.github-icon {
+  color: var(--text-primary);
+}
+
+.linkedin-icon {
+  color: #0a66c2;
+}
+
+.whatsapp-icon {
+  color: #25d366;
+}
+
+.x-icon {
+  color: var(--text-primary);
+}
+
+/* Contact text */
+
+.contact-link-text {
+  min-width: 0;
+}
+
+.contact-link-text h3 {
+  margin-bottom: 6px;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.contact-link-text p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.contact-link-arrow {
+  flex-shrink: 0;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  transition: transform var(--transition);
+}
+
+.contact-link-card:hover .contact-link-arrow {
+  transform: translate(3px, -3px);
+}
+
+/* Responsive layout */
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 75px 0;
+  }
+
+  .contact-content {
+    margin-bottom: 40px;
+  }
+
+  .contact-content h2 {
+    letter-spacing: -0.8px;
+  }
+
+  .contact-links {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-link-card {
+    padding: 20px;
+  }
+}
