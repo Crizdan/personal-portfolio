@@ -1,7 +1,9 @@
-
 # CrizDan | Personal Portfolio
 
 A personal developer portfolio showcasing my journey in software development, my healthcare background, selected projects, and interest in healthcare technology and AI applications in medical imaging.
+
+**Live Website:**
+[crizdan-portfolio.vercel.app](https://crizdan-portfolio.vercel.app)
 
 ## About
 
@@ -11,23 +13,42 @@ I'm a Radiography student at Nnamdi Azikiwe University and an aspiring software 
 
 My background in healthcare influences my approach to technology, particularly my interest in healthcare software and AI applications in medical imaging.
 
+This portfolio presents my technical skills, selected projects, experience, and professional interests.
+
+## Features
+
+- Responsive design for desktop and mobile devices.
+- Dark and light themes with saved theme preferences.
+- Responsive navigation with a mobile menu.
+- Animated professional introduction.
+- About and Skills sections.
+- Featured Projects showcase.
+- Experience and Languages sections.
+- Contact section with external links.
+- Custom CrizDan branding and theme-specific logos.
+- Custom favicon and social sharing preview image.
+- Search engine and social sharing metadata.
+
 ## Technologies
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (ES6+)
 - React
 - Vite
+- React Icons
 - Git and GitHub
+- Vercel (deployment)
 
-## Current Features
+## Featured Projects
 
-- Responsive navigation
-- Personal introduction and Hero section
-- Animated professional introduction
-- About section
-- Dark theme foundation
-- Responsive layouts for desktop and mobile
+### Radiography Student Toolkit
+
+A Python-based project designed to provide useful tools and information for radiography students, including BMI calculations, eGFR support, contrast procedure information, and exposure factor assistance.
+
+### OfflineNaira
+
+A collaborative offline-first mobile application developed to explore peer-to-peer value transfer in low-connectivity environments using Bluetooth Low Energy (BLE).
 
 ## Getting Started
 
@@ -35,59 +56,76 @@ My background in healthcare influences my approach to technology, particularly m
 
 - Node.js
 - npm
+- Git
 
 ### Installation
 
 Clone the repository:
-
 ```bash
-git clone https://github.com/Crizdan/personal-portfolio
+git clone https://github.com/Crizdan/personal-portfolio.git
 ```
-
-Navigate into the project:
-
+Navigate into the project directory:
 ```bash
 cd personal-portfolio
 ```
-
 Install dependencies:
-
 ```bash
 npm install
 ```
-
 Start the development server:
-
 ```bash
 npm run dev
 ```
+### Production Build
 
+To create a production build:
+```bash
+npm run build
+```
+To preview the production build locally:
+```bash
+npm run preview
+```
 ## Project Structure
-
 ```text
-src/
-├── assets/
-├── components/
-├── App.jsx
-├── index.css
-└── main.jsx
+personal-portfolio/
+├── public/
+│   ├── favicon assets
+│   └── og-image.png
+├── src/
+│   ├── assets/
+│   │   └── branding/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Languages.jsx
+│   │   ├── Contact.jsx
+│   │   └── Footer.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
 ```
 
-## Development Status
+## Deployment
 
-This portfolio is actively under development.
+The portfolio is deployed using Vercel and connected to the GitHub repository.
 
-Planned sections include:
-
-- About
-- Skills
-- Projects
-- Experience and Contributions
-- Languages
-- Contact
 
 ## Author
 
-**Oluebube Daniel Hillary (CrizDan)**
+Oluebube Daniel Hillary (CrizDan)
 
-GitHub: https://github.com/Crizdan/personal-portfolio
+- GitHub: [Crizdan](https://github.com/Crizdan)
+- LinkedIn: [Oluebube Daniel Hillary](https://www.linkedin.com/in/oluebubedaniel77/)
+- X: [@crizdan77](https://x.com/crizdan77)
+
+---
+
+This project is part of my continuous learning journey in software development, with a long-term interest in healthcare technology and AI in medical imaging.
